@@ -11,7 +11,12 @@ Lees de instructies op de wiki pagina hoe de robotarm bibliotheek werkt. Vervolg
   robotArm.loadLevel("exercise 1");
 
   // Je eigen code plaats je hier.
-
+   ------------------------------------
+      robotArm.moveRight();
+      robotArm.grab();
+      robotArm.moveLeft();
+      robotArm.drop();
+   ------------------------------------
   robotArm.run();
 </script>
 ```
@@ -28,7 +33,38 @@ Verplaats het rode blok één plek naar links.
   robotArm.loadLevel("exercise 2");
 
   // Je eigen code plaats je hier.
+------------------------------------
+  robotArm.speed = (500);
+  robotArm.loadLevel("exercise 2");
+  robotArm.grab();
 
+  for (var i = 1; i <= 9; i++) {
+     robotArm.moveRight();
+}
+
+  robotArm.drop();
+
+  for (var a = 1; a <= 5; a++) {
+     robotArm.moveLeft();
+}
+
+robotArm.grab();
+
+  for (var b = 1; b <= 5; b++) {
+      robotArm.moveRight();
+}
+
+robotArm.drop();
+
+robotArm.moveLeft();
+robotArm.moveLeft();
+robotArm.grab();
+robotArm.moveRight();
+robotArm.moveRight();
+
+robotArm.drop();
+            
+robotArm.run();
   robotArm.run();
 </script>
 ```
