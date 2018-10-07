@@ -505,3 +505,4 @@ var RobotArm = function (canvas) {
         requestAnimationFrame(local.render);
     };
 };
+
